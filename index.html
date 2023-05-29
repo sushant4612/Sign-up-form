@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <img src="Images/higor-hanschen-DomqHKN2Xik-unsplash.jpg" alt="anime" />
+      </div>
+      <div class="form-container">
+        <p class="glow-text">
+          Enter the realm of shadows and secrecy. Embrace stealth, master
+          weapons, and the indomitable spirit of a warrior. With each login,
+          unveil a new chapter in your shinobi legacy. Forge unbreakable bonds,
+          rise above adversity. Login now and let your inner shinobi soar
+        </p>
+
+        <p  class="para glow-text" >Let's do this!</p>
+        <form action="">
+          <div class="container1">
+            <div class="row" style="display: flex">
+              <div class="input">
+                <label for="first_name">FIRST NAME</label>
+                <input type="text" id="first_name" required />
+              </div>
+              <div class="input">
+                <label for="last_name">LAST NAME</label>
+                <input type="text" id="last_name" required />
+              </div>
+            </div>
+            <div class="row" style="display: flex">
+              <div class="input">
+                <label for="email">E-MAIL</label>
+                <input type="email" id="email" required />
+              </div>
+
+              <div class="input">
+                <label for="phone">PHONE NUMBER</label>
+                <input
+                  type="tel"
+                  id="phone-number"
+                  name="phone-number"
+                  required
+                  pattern="\d{10}"
+                  title="Please enter a valid 10-digit phone number"
+                />
+              </div>
+            </div>
+            <div class="row" style="display: flex">
+              <div class="input">
+                <label for="pass">PASSWORD</label>
+                <input type="password" id="pass" required />
+              </div>
+              <div class="input">
+                <label for="cpass">CONFIRM PASSWORD</label>
+                <input type="password" id="cpass" required />
+              </div>
+            </div>
+          </div>
+          <button>CREATE ACCOUNT</button>
+
+          <p class="para glow-text">Already have an account?<a href="#">Log in</a></p>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
