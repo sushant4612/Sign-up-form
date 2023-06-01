@@ -1,95 +1,148 @@
 @font-face {
-    font-family: 'BloodFont';
-    src: url('Images/youmurdererbb_reg.ttf') format('truetype');
+  font-family: "BloodFont";
+  src: url("Images/youmurdererbb_reg.ttf") format("truetype");
 }
 
 @keyframes glow {
-    0% {
-        box-shadow: 0 0 10px rgba(0, 0, 255, 0.5); /* Initial box shadow */
-    }
-    100% {
-        box-shadow: 0 0 20px rgba(0, 0, 255, 0.8); /* Glowing box shadow */
-    }
+  0% {
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.5); /* Initial box shadow */
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(0, 0, 255, 0.8); /* Glowing box shadow */
+  }
 }
 
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
 .container1 {
-    margin-left: 10px;
-    /* margin-right: -100px; */
-    margin-top: 10px;
-    padding-bottom: 15px;
-    width: 783px; 
-    /* height: 200px; */ 
-    background-color: #f1f1f1;
-    box-shadow: 0 0 10px rgba(0, 0, 255, 0.5); /* Initial box shadow */
-    animation: glow 2s infinite alternate; /* Apply the glow animation */
-} 
-
-img{
-    height: 100vh;
-    width: 40vw;
+  margin-left: 10px;
+  /* margin-right: -100px; */
+  margin-top: 10px;
+  padding-bottom: 15px;
+  width: 783px;
+  /* height: 200px; */
+  background-color: #f1f1f1;
+  box-shadow: 0 0 10px rgba(0, 0, 255, 0.5); /* Initial box shadow */
+  animation: glow 2s infinite alternate; /* Apply the glow animation */
 }
 
-label{
-    font-size: small;
+img {
+  height: 100vh;
+  width: 40vw;
 }
 
-.container{
-    display: flex;
+label {
+  font-size: small;
 }
 
-.form-container{
-    background-color: #e0e0ebdb ;
-    color: black;
+.container {
+  display: flex;
+  height: 100vh;
 }
 
-.para{
-    padding-top: 0px;
-    padding-bottom: 2px;
+.form-container {
+  background-color: #e0e0ebdb;
+  color: black;
 }
 
-p{
-    padding: 66px;
-    padding-left: 40px;
-    font-size: 30px;
-    font-family: 'BloodFont';
+.para {
+  padding-top: 0px;
+  padding-bottom: 2px;
 }
 
-.row{
-    /* justify-content: flex-start; */
-    
-    padding-left: 40px;
-    padding-top: 25px;
+p {
+  padding: 66px;
+  padding-left: 40px;
+  font-size: 30px;
+  font-family: "BloodFont";
 }
 
-input{
-    width: 300px;
-    height: 25px;
+form {
+  font-family: "Times New Roman", Times, serif;
+}
+.row {
+  /* justify-content: flex-start; */
+
+  padding-left: 40px;
+  padding-top: 25px;
 }
 
-.input{
-    padding-right: 100px;
-    display: flex;
-    flex-direction: column;
+input {
+  width: 300px;
+  height: 25px;
 }
 
-button{
-    border-radius: 10px;
-    border-color: rgba(0, 0, 255, 0.5);
-    margin: 33px;
-    padding: 15px;
+input {
+  border: 2px solid #000;
+  /* margin-bottom: 15px;
+  padding: 5px; */
+  border-radius: 5px;
 }
 
-input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, input[type="password"]:focus {
-    background-color: #fff;
+input:invalid {
+  border-color: red;
 }
 
-/* .glow-text {
-    /* font-size: 24px; */
+input:valid {
+  border-color: green;
+}
+
+.input {
+  padding-right: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.my-button {
+  /* Button background color */
+  background-color: #4caf50;
+
+  /* Button text color */
+  color: white;
+
+  /* Button padding */
+  /* padding: 10px 20px; */
+
+  /* Button border */
+  border: none;
+
+  /* Button border radius */
+  border-radius: 4px;
+
+  /* Button cursor */
+  cursor: pointer;
+
+  /* Optional: Button hover effect */
+  transition: background-color 0.3s ease;
+}
+
+.my-button:hover {
+  background-color: #45a049;
+}
+
+button {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  border-radius: 10px;
+  border-color: rgba(0, 0, 255, 0.5);
+  margin: 33px;
+  padding: 15px;
+  /* background-color: green; */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="password"]:focus {
+  background-color: #fff;
+}
+
+/* 
+.glow-text {
+    font-size: 24px;
     color: #fff;
     text-shadow: 0 0 5px #00f, 0 0 10px #00f, 0 0 15px #00f, 0 0 20px #00f, 0 0 25px #00f, 0 0 30px #00f, 0 0 35px #00f;
     animation: glow 2s infinite alternate;
